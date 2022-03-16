@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>浙江财经大学建康通行吗</title>
@@ -19,9 +19,23 @@
     var h = date.getHours();  //时
     var minute = date.getMinutes()  //分
     var s = date.getSeconds(); //秒
-    if(m<10){
-    m = "0"+m;
+    if(m<12){
+        nam="冬安"
     }
+
+    if(m<10){
+        if(m<9){
+            nam="秋安"
+        }
+        if(m<7){
+            nam="夏安"
+        }
+        if(m<4){
+            nam="春安"
+        }
+        m = "0"+m;
+    }
+   
     if(d<10){
     d = "0"+d;
     }
@@ -36,7 +50,10 @@
     } 
     document.getElementById("timeday").innerHTML =  m+"月"+d+"日";
     document.getElementById("timeShow").innerHTML =  h+":"+minute+":"+s+"  ";
+    document.getElementById("namename").innerHTML="姓名："+nam 
+
       }
+    
     </script>  
     </div>  
     
@@ -55,7 +72,7 @@
     <div id="timeday"style="position: absolute;z-index: 2;left: 250px;top: 200px;font-size: 600%;font-weight: bold" >11月11日</div>
     <div id="timeShow"style="position: absolute;z-index: 2;left: 200px;top: 300px;font-size: 800%;font-weight: bold">16:14:00</div>
 
-    <div style="position: absolute;z-index: 2;left: 100px;top: 550px;font-size: 300%;">姓名：冬安</div>
+    <div id="namename"style="position: absolute;z-index: 2;left: 100px;top: 550px;font-size: 300%;">姓名：春安</div>
     <div style="position: absolute;z-index: 2;left: 100px;top: 630px;font-size: 250%;">单位：会计学院（MPACC学院）</div>
     </div>
 
