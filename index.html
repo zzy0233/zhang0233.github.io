@@ -16,7 +16,8 @@
         //##########################################
         //#############改变生效条件#################
         nu_min=6
-        nu_max=90
+        nu_max=9
+        dddate=4
         //############################################
         //############################################
         
@@ -25,6 +26,7 @@
         
         nowtime = new Date();
         hour = nowtime.getHours();//时
+        day = nowtime.getDate();//日
         w=170
         h=170
         yanse="#1E90FF"
@@ -45,6 +47,8 @@
     function border() {
         var jz="已加强接种";
         var bor=document.getElementById('border');
+        if (day = dddate){
+            nu_max =24}
         if(hour<nu_max && hour>nu_min) {
             bor.setAttribute("src","通行码/border.png");
             showTime();
