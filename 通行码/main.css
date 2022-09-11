@@ -1,9 +1,9 @@
 @charset "utf-8";
 body {
-	background-color: #10ad6;
+	background-color: #fff;
 	padding: 0;
 	margin: 0;
-	font-family:"Microsoft YaHei";
+	font-family:"OPPOSans Bold";
 }
  input:-moz-placeholder, textarea:-moz-placeholder {
  color: #fff;
@@ -33,11 +33,11 @@ html, body {
 	height: 100%
 }
 .blue-bg{
-	background:url(../images/bg1.jpg) no-repeat left top;
+	background:url(images/bg1.jpg) no-repeat left top;
 	background-size:100% 100%;
 }
 .orange-bg{
-	background:url(../images/orange-bg.png) no-repeat left top;
+	background:url(images/orange-bg.png) no-repeat left top;
 	background-size:100% auto;
 }
 .top-header{
@@ -60,7 +60,7 @@ html, body {
 }
 .content-box{
 	width:90%;
-	height:600px;
+	height:630px;
 	border-radius:10px;
 	box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
 	background:#fff;
@@ -68,10 +68,10 @@ html, body {
 	position:relative;
 }
 .top-title{
-	width:79%;
+	width:73%;
 	margin:0 auto;
 	line-height:30px;
-	margin-left: 10px;
+	margin-left: 20px;
 	float: left;
 }
 .sss{
@@ -85,10 +85,10 @@ html, body {
 	font-weight:normal;
 }
 .link-btn{
-	width:18%;
+	width:20%;
 	float:right;
-	text-align:right;
-	color:#028aff;
+	/*text-align:right;*/
+	/*color:#028aff;*/
 	text-decoration:none;
 	font-size:1.1rem;
 }
@@ -103,11 +103,11 @@ html, body {
 .qr{
 	width:100%;
 	text-align: center;
-	padding: 30px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
 	position: relative;
 	margin: auto;
 }
-.qr img{
+.qr #border{
 	top: -2px;
 	width: 299px;
 	left: 50%;
